@@ -1,16 +1,128 @@
-# React + Vite
+# Movie Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Movie Explorer application built with React. Users can browse TV shows, search for specific titles, and view detailed information in an interactive modal.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://movie-explorer-two-snowy.vercel.app/
 
-## React Compiler
+## GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/mishukmahbub/movie-explorer
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive home page
+- Navigation between Home and Movies pages
+- Browse TV shows from the TVMaze API
+- Search shows by title
+- Responsive movie/show card grid
+- Show poster, title, release year, and rating
+- Interactive details modal
+- Modal close button
+- Close modal by pressing the Escape key
+- Close modal by clicking outside the modal
+- Loading state
+- API error handling
+- Responsive design for desktop, tablet, and mobile
+
+## Technologies Used
+
+- JavaScript
+- React
+- React Router
+- Vite
+- CSS
+- TVMaze API
+
+## API
+
+This project uses the free TVMaze API.
+
+### Get All Shows
+
+```text
+https://api.tvmaze.com/shows
+```
+
+### Search Shows
+
+```text
+https://api.tvmaze.com/search/shows?q={query}
+```
+
+## Project Structure
+
+```text
+movie-explorer/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── MovieCard.jsx
+│   │   ├── MovieModal.jsx
+│   │   ├── Navbar.jsx
+│   │   └── SearchBar.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   └── Movies.jsx
+│   ├── assets/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── package.json
+├── vercel.json
+└── vite.config.js
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/mishukmahbub/movie-explorer.git
+```
+
+Go to the project directory:
+
+```bash
+cd movie-explorer
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```text
+http://localhost:5173
+```
+
+## Production Build
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+The production files will be generated inside the `dist` folder.
+
+## Deployment
+
+The application is deployed using Vercel.
+
+Live URL:
+
+https://movie-explorer-two-snowy.vercel.app/
+
